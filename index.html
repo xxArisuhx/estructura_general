@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura_general</title>
+</head>
+<body>
+    <header>
+        <h1 id="inicio">Bienvenidos A Nuestra Pagina</h1>
+        <h3>Estructura general del Proyecto</h3>
+        <a href="#inicio"><img src="img/pink-logo-barbie.webp" width="190" height="150" alt="logotipo"></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--seccion principal del contenido-->
+    <main>
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p>En esta seccion puedes leer sobre quien soy y que hago</p>
+            <img src="img/images.jpg" width="300" height="200" alt="Muñecas"><br>
+            <p>Video Relacionado</p>
+            <video controls src="Media/ToyStory-3-Trailer.mp4" type="mp4" width="500" height="400"></video> <br>
+            <a href=">#inicio">Volver a inicio</a>
+        </section>
+        <section id="Servicios">
+            <h2>Servicios</h2>
+            <p>Ofrezco una variedad de venta de muñecas</p>
+            <img src="img/images (1).jpg" width="600" height="400" alt="images1"><br>
+            <h3>Escucha este audio</h3> <br>
+            <audio controls src="Media/Cuandoalguien.mp3" type="mp3"></audio> 
+        <br>
+            <a href=">#servicio">Volver a inicio</a> <br>
+        </section>
+        <section id="contacto">
+            <h2>Contactos</h2>
+            <p>Ponte en contacto por medio de este formulario</p>
+            <div class="contenedor">
+                <h2>Formulario de contacto</h2>
+                <form action="/enviar formulario" method="post">
+                    <div class="formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50" placeholder="Ingrese su nombre">
+                    </div> <br>
+                    <div class="formulario">
+                        <label for="Email">Correo Electronico:</label>
+                        <input type="email" id="email" name="email" required placeholder="tuemail@ejemplo.com" >
+                    </div>
+                    <div class="formulario">
+                        <label for="telefono">Telefono:</label>
+                        <input type="tel" id="telefono" name="telefono" required pattern="[0-9] {3}-[0-9]{4}-[0-9]{4}" placeholder="506-44444444">
+                    </div>
+                    <div class="formulario">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required minlength="5" maxlength="100" placeholder="Motivo de su mensaje" >
+                    </div>
+                    <div class="formulario">
+                        <label for="Mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" required minlength="10" maxlength="500" placeholder="Escriba aqui su mensaje"></textarea>
+                    </div> <br>
+                    <input type="submit" value="Enviar">
+                </form>
+                </div> <br>
+            <a href=">#contacto">Volver a inicio</a>
+        </section>
+    </main>
+    <!--barra lateral con informacion adicional-->
+    <aside>
+        <h3>Noticias Recientes</h3>
+        <p>Ultimas actualizaciones sobre los servicios</p>
+        <img src="img/original-1706-1587662438-2.jpg" alt="original-1706-1587662438-2" width="250" height="150">
+    </aside>
+    <footer>
+        <p>&copy; 2024 Mi pagina web Todos los derechos reservados</p>
+        <p><a href="http://www.ina.ac.cr"> visita tienda externa </a></p>
+        <a href=">#inicio">Volver a inicio</a>
+    </footer>
+</body>
+</html>
